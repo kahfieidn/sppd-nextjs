@@ -15,9 +15,13 @@
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.6",
     "@mui/material-nextjs": "^6.4.3",
+    "@mui/styled-engine-sc": "^6.4.6",
+    "@mui/x-data-grid": "^7.27.2",
+    "@mui/x-data-grid-generator": "^7.27.2",
     "next": "15.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.15"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

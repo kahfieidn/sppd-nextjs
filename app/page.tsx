@@ -1,14 +1,13 @@
 "use client";
 
-import CustomPaginationActionsTable from "@/components/custom-pagination-action-table";
 import * as React from "react";
 import FloatingActionButtons from "@/components/floating-action-buttons";
-
+import QuickFilteringGrid from "@/components/quick-filtering-grid";
 
 export default function Home() {
   return (
     <div>
-      <CustomPaginationActionsTable />
+      <QuickFilteringGrid />
       <FloatingActionButtons />
     </div>
   );
