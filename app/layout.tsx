@@ -37,7 +37,7 @@ export default function RootLayout({
               branding={{
                 logo: <img src="https://mui.com/static/logo.png" alt="MUI logo" />,
                 title: 'AMBIL NOMOR SPPD',
-                homeUrl: '/toolpad/core/introduction',
+                homeUrl: '/',
               }}
             >
               {children}
