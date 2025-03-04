@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import SaveIcon from '@mui/icons-material/Save';
+import CachedIcon from '@mui/icons-material/Cached';
 
 const CreateSppd = () => {
   return (
@@ -20,8 +22,8 @@ const CreateSppd = () => {
               variant="outlined"
             />
           </Grid>
-          <Grid size={4}>
-            <Button variant="contained">Generate Nomor SPPD</Button>
+          <Grid size={4} alignContent={"center"}>
+            <Button variant="contained" size="large" endIcon={<CachedIcon />}>Generate Nomor</Button>
           </Grid>
           <Grid size={6}>
             <TextField
@@ -40,7 +42,9 @@ const CreateSppd = () => {
             />
           </Grid>
           <Grid size={6}>
-            <Button variant="contained">Submit</Button>
+            <Button variant="contained" startIcon={<SaveIcon />}>
+              Simpan
+            </Button>{" "}
           </Grid>
         </Grid>
       </Box>
