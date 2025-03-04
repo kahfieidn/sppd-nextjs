@@ -14,7 +14,7 @@ const CreateSppd = () => {
 
       <Box sx={{ width: "100%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid size={8}>
+          <Grid size={10}>
             <TextField
               fullWidth
               id="outlined-basic"
@@ -22,7 +22,7 @@ const CreateSppd = () => {
               variant="filled"
             />
           </Grid>
-          <Grid size={4} alignContent={"center"}>
+          <Grid size={2} alignContent={"center"}>
             <Button variant="contained" endIcon={<CachedIcon />}>Ambil Nomor</Button>
           </Grid>
           <Grid size={6}>
