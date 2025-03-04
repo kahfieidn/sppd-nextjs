@@ -33,8 +33,8 @@ const CreateSppd = () => {
     <div>
       <h1>Create SPPD</h1>
 
-      <Box sx={{ width: "100%" }}>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Box sx={{ width: "100%", }}>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid size={8}>
             <TextField fullWidth id="nomor" label="Nomor" variant="filled" />
           </Grid>
@@ -69,12 +69,12 @@ const CreateSppd = () => {
           </Grid>
           <Grid size={6}>
             <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="en-gb">
-            <DatePicker value={tanggal_awal_dinas}/>
+            <DatePicker label="Tanggal Awal Dinas" value={tanggal_awal_dinas}/>
             </LocalizationProvider>
           </Grid>
           <Grid size={6}>
             <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="en-gb">
-              <DatePicker value={tanggal_akhir_dinas} />
+              <DatePicker label="Tanggal Akhir Dinas" value={tanggal_akhir_dinas} />
             </LocalizationProvider>
           </Grid>
           <Grid size={12}>
