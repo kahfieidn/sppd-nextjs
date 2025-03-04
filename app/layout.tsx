@@ -34,7 +34,11 @@ export default function RootLayout({
                 ...item,
                 icon: item.icon ? <item.icon /> : null, // Render icon only when needed
               }))}
-              branding={{ title: "AMBIL NOMOR SPPD" }}
+              branding={{
+                logo: <img src="https://mui.com/static/logo.png" alt="MUI logo" />,
+                title: 'AMBIL NOMOR SPPD',
+                homeUrl: '/toolpad/core/introduction',
+              }}
             >
               {children}
             </NextAppProvider>
