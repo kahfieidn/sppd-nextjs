@@ -25,8 +25,8 @@ const CreateSppd = () => {
   };
 
 
-  const [tanggal_awal_dinas, setTanggalAwalDinas] = React.useState<Dayjs | null>(null);
-  const [tanggal_akhir_dinas, setTanggalAkhirDinas] = React.useState<Dayjs | null>(null);
+  const [tanggal_awal_dinas] = React.useState<Dayjs | null>(null);
+  const [tanggal_akhir_dinas] = React.useState<Dayjs | null>(null);
 
 
   return (
