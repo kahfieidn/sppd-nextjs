@@ -17,6 +17,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { Dayjs } from "dayjs";
 import "dayjs/locale/en-gb";
 
+
 const CreateSppd = () => {
   const [kota, setKota] = React.useState("");
 
@@ -98,10 +99,16 @@ const CreateSppd = () => {
                 id="perihal"
                 label="Perihal"
                 variant="outlined"
+                multiline
+                maxRows={4}
               />
             </Grid>
             <Grid size={6}>
-              <Button variant="contained" startIcon={<SaveIcon />} type="submit">
+              <Button
+                variant="contained"
+                startIcon={<SaveIcon />}
+                type="submit"
+              >
                 Simpan
               </Button>{" "}
             </Grid>
