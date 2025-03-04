@@ -19,11 +19,27 @@ const CreateSppd = () => {
               fullWidth
               id="outlined-basic"
               label="Outlined"
-              variant="outlined"
+              variant="filled"
             />
           </Grid>
           <Grid size={4} alignContent={"center"}>
-            <Button variant="contained" size="large" endIcon={<CachedIcon />}>Generate Nomor</Button>
+            <Button variant="contained" endIcon={<CachedIcon />}>Ambil Nomor</Button>
+          </Grid>
+          <Grid size={6}>
+            <TextField
+              fullWidth
+              id="outlined-basic"
+              label="Outlined"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid size={6}>
+            <TextField
+              fullWidth
+              id="outlined-basic"
+              label="Outlined"
+              variant="outlined"
+            />
           </Grid>
           <Grid size={6}>
             <TextField
