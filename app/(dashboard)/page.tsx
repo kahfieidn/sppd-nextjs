@@ -1,5 +1,3 @@
-"use client";
-
 import FloatingActionButtons from "@/components/floating-action-buttons";
 import BasicTable from "@/components/basic-table";
 const Page = () => {
