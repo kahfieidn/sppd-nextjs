@@ -32,29 +32,21 @@ const columns: readonly Column[] = [
     id: "nama",
     label: "Nama",
     minWidth: 100,
-    // align: "right",
-    // format: (value: number) => value.toLocaleString("en-US"),
   },
   {
     id: "kota",
     label: "Kota",
     minWidth: 100,
-    // align: "right",
-    // format: (value: number) => value.toLocaleString("en-US"),
   },
   {
     id: "tanggal_awal_dinas",
     label: "Tanggal Awal Dinas",
     minWidth: 100,
-    // align: "right",
-    // format: (value: number) => value.toLocaleString("en-US"),
   },
   {
     id: "tanggal_akhir_dinas",
     label: "Tanggal Akhir Dinas",
     minWidth: 100,
-    // align: "right",
-    // format: (value: number) => value.toLocaleString("en-US"),
   },
   {
     id: "perihal",
@@ -70,7 +62,7 @@ const columns: readonly Column[] = [
 ];
 
 const StickyHeadTable = async () => {
-  const sppds = await getSppds();
+  // const sppds = await getSppds();
 
   return (
     <Paper sx={{ width: "100%", overflow: "hidden" }}>
@@ -102,7 +94,7 @@ const StickyHeadTable = async () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {sppds.map((sppd) => {
+            {/* {sppds.map((sppd) => {
               return (
                 <TableRow hover role="checkbox" tabIndex={-1} key={sppd.id}>
                   <TableCell>{sppd.id}</TableCell>
@@ -115,7 +107,7 @@ const StickyHeadTable = async () => {
                   <TableCell>{sppd.perihal}</TableCell>
                 </TableRow>
               );
-            })}
+            })} */}
 
           </TableBody>
         </Table>
