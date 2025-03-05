@@ -1,16 +1,9 @@
-import FloatingActionButtons from "@/components/floating-action-buttons";
-import BasicTable from "@/components/basic-table";
-const Page = () => {
+const page = () => {
   return (
     <div>
-
-      <div className="mt-10">
-      <BasicTable></BasicTable>
-
-      </div>
-      <FloatingActionButtons></FloatingActionButtons>
+      <h1>run</h1>
     </div>
   );
 };
 
-export default Page;
+export default page;
