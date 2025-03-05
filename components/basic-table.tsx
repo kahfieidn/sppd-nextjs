@@ -17,6 +17,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import { getSppds } from "@/lib/data";
 import {formatDate} from "@/lib/utils";
 
+import { EditButton, DeleteButton } from "@/components/buttons";
+
+
 interface Column {
   id: "id" | "nomor" | "nama" | "kota" |  "tanggal_awal_dinas" |  "tanggal_akhir_dinas" | "perihal" | "aksi";
   label: string;
@@ -26,12 +29,11 @@ interface Column {
 }
 
 const columns: readonly Column[] = [
-  { id: "id", label: "ID", minWidth: 10 },
   { id: "nomor", label: "Nomor", minWidth: 100 },
   {
     id: "nama",
     label: "Nama",
-    minWidth: 100,
+    minWidth: 200,
   },
   {
     id: "kota",
@@ -41,25 +43,26 @@ const columns: readonly Column[] = [
   {
     id: "tanggal_awal_dinas",
     label: "Tanggal Awal Dinas",
-    minWidth: 100,
+    minWidth: 150,
     // align: "right",
     // format: (value: number) => value.toLocaleString("en-US"),
   },
   {
     id: "tanggal_akhir_dinas",
     label: "Tanggal Akhir Dinas",
-    minWidth: 100,
+    minWidth: 150,
   },
   {
     id: "perihal",
     label: "Perihal",
-    minWidth: 100,
+    minWidth: 150,
     format: (value: number) => value.toFixed(2),
   },
   {
     id: "aksi",
-    label: "Aksi",
-    minWidth: 50,
+    label: "",
+    minWidth: 200,
+    align: "right",
   }
 ];
 
@@ -99,14 +102,16 @@ const StickyHeadTable = async () => {
             {sppds.map((sppd) => {
               return (
                 <TableRow hover role="checkbox" tabIndex={-1} key={sppd.id}>
-                  <TableCell>{sppd.id}</TableCell>
                   <TableCell>{sppd.nomor}</TableCell>
                   <TableCell>{sppd.nama}</TableCell>
                   <TableCell>{sppd.kota}</TableCell>
                   <TableCell>{formatDate(sppd.tanggal_awal_dinas.toString())}</TableCell>
                   <TableCell>{formatDate(sppd.tanggal_akhir_dinas.toString())}</TableCell>
                   <TableCell>{sppd.perihal}</TableCell>
-                  <TableCell>{sppd.perihal}</TableCell>
+                  <TableCell align="right">
+                    <EditButton />
+                    <DeleteButton />
+                  </TableCell>
                 </TableRow>
               );
             })}
