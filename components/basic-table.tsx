@@ -112,6 +112,7 @@ const StickyHeadTable = async () => {
                   <TableCell>{formatDate(sppd.tanggal_awal_dinas.toString())}</TableCell>
                   <TableCell>{formatDate(sppd.tanggal_akhir_dinas.toString())}</TableCell>
                   <TableCell>{sppd.perihal}</TableCell>
+                  <TableCell>{sppd.perihal}</TableCell>
                 </TableRow>
               );
             })}
