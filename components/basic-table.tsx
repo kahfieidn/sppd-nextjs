@@ -62,7 +62,7 @@ const columns: readonly Column[] = [
 ];
 
 const StickyHeadTable = async () => {
-  // const sppds = await getSppds();
+  const sppds = await getSppds();
 
   return (
     <Paper sx={{ width: "100%", overflow: "hidden" }}>
