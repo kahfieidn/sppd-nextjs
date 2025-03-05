@@ -6,6 +6,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import React from "react";
 import { NAVIGATION } from "./navigation";
+import Image from "next/image";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -35,7 +36,7 @@ export default function RootLayout({
                 icon: item.icon ? <item.icon /> : null, // Render icon only when needed
               }))}
               branding={{
-                logo: <img src="https://mui.com/static/logo.png" alt="MUI logo" />,
+                logo: <Image src="/assets/logo.png" alt="MUI logo" width={50} height={35} />,
                 title: 'AMBIL NOMOR SPPD',
                 homeUrl: '/',
               }}
