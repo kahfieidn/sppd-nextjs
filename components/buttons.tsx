@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 export const EditButton = () => {
     return (
         <Button variant="contained" color="primary">
-            Link
+            Edit
         </Button>
     );
 }
