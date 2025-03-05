@@ -42,6 +42,8 @@ const columns: readonly Column[] = [
     id: "tanggal_awal_dinas",
     label: "Tanggal Awal Dinas",
     minWidth: 100,
+    // align: "right",
+    // format: (value: number) => value.toLocaleString("en-US"),
   },
   {
     id: "tanggal_akhir_dinas",
@@ -94,7 +96,7 @@ const StickyHeadTable = async () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {/* {sppds.map((sppd) => {
+            {sppds.map((sppd) => {
               return (
                 <TableRow hover role="checkbox" tabIndex={-1} key={sppd.id}>
                   <TableCell>{sppd.id}</TableCell>
@@ -107,7 +109,7 @@ const StickyHeadTable = async () => {
                   <TableCell>{sppd.perihal}</TableCell>
                 </TableRow>
               );
-            })} */}
+            })}
 
           </TableBody>
         </Table>
